@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Game!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 bg-gray-300">
+    
+
+    <div id="wrapper" >
+        <h1 class="text-4xl font-bold text-center bg-slate-800 text-gray-100 py-4 border-b-4">Leaderboard</h1>
+        
+        <div class="relative overflow-x-auto sm:rounded-lg mt-2 ">
+            <table class="w-1/4 mx-auto text-sm text-left text-gray-500 text-center">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 ">
+                    <tr>
+                        <th class="px-6 py-3">
+                            First
+                        </th>
+                        <th class="px-6 py-3">
+                            Last
+                        </th>
+                        <th class="px-6 py-3">
+                            Attempts
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b hover:bg-red-300">
+                        <td  class="px-6 py-4 font-medium ">
+                            Darth
+                        </td>
+                        <td class="px-6 py-4">
+                            Gator
+                        </td>
+                        <td class="px-6 py-4">
+                            1
+                        </td>
+                    </tr>
+                    <tr class="border-b bg-gray-50 hover:bg-red-300">
+                        <th class="px-6 py-4 font-medium ">
+                            R2
+                        </td>
+                        <td class="px-6 py-4">
+                            Dee Two
+                        </td>
+                        <td class="px-6 py-4">
+                            2
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-red-300">
+                        <td  class="px-6 py-4 font-medium ">
+                            Obi
+                        </td>
+                        <td class="px-6 py-4">
+                            Won
+                        </td>
+                        <td class="px-6 py-4">
+                            3
+                        </td>
+                    </tr>
+                    <tr class="border-b bg-gray-50 hover:bg-red-300">
+                        <th class="px-6 py-4 font-medium ">
+                            Luke
+                        </td>
+                        <td class="px-6 py-4">
+                            Walkers
+                        </td>
+                        <td class="px-6 py-4">
+                            3
+                        </td>
+                    </tr>
+                    <tr class="border-b bg-green-300">
+                        <th class="px-6 py-4 font-medium ">
+                            {{first_name}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{last_name}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{attempts}}
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <form action="/reset" method="POST" class="flex  justify-center mt-6 mx-auto">
+            <button class="text-white hover:text-white border border-white hover:bg-slate-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center my-2">Play Again</button>
+        </form>
+
+    </div>
+</body>
+</html>
